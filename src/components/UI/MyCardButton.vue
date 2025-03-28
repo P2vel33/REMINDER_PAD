@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+// const props = defineProps()
+</script>
 
 <template>
   <button class="card-button">
@@ -15,6 +17,7 @@
   border: none;
   text-align: start;
   display: block;
+  width: 100%;
 }
 .card-button:hover {
   background: rgba(255, 255, 255, 0.1);
