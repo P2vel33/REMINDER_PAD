@@ -3,8 +3,12 @@
 <template>
   <div class="header">
     <!-- <slot></slot> -->
-    Personal Journal
+    <img class="logo" src="/public/plus.svg" alt="" />
   </div>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.logo {
+  width: 180px;
+}
+</style>

@@ -46,5 +46,6 @@ console.log(dataArray.value);
 <style lang="css">
 .app {
   display: flex;
+  padding: 30px;
 }
 </style>
