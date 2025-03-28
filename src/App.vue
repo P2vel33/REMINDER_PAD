@@ -8,6 +8,7 @@ import Body from "./layouts/Body.vue";
 import Header from "./components/Header.vue";
 import JournalList from "./components/JournalList.vue";
 import MyJournalItemAdd from "./components/UI/MyJournalItemAdd.vue";
+import JournalForm from "./components/JournalForm.vue";
 
 const dataArray = ref([
   {
@@ -21,7 +22,6 @@ const dataArray = ref([
     date: Date.now() + 1,
   },
 ]);
-console.log(dataArray.value);
 </script>
 
 <template>
@@ -29,17 +29,15 @@ console.log(dataArray.value);
     <LeftPanel>
       <Header />
       <MyJournalItemAdd />
-      <JournalList>
-        <div v-for="data in dataArray" :key="data.date">
-          <MyCardButton>
-            <JournalItem :data="data"></JournalItem>
-          </MyCardButton>
-        </div>
+      <JournalList v-for="data in dataArray" :key="data.date">
+        <MyCardButton>
+          <JournalItem :data="data"></JournalItem>
+        </MyCardButton>
       </JournalList>
     </LeftPanel>
-    <Body> Body </Body>
-    <!-- <h1>Header</h1>
-    <MyButton></MyButton> -->
+    <Body>
+      <JournalForm />
+    </Body>
   </div>
 </template>
 

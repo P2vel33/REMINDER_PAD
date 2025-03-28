@@ -1,16 +1,8 @@
-<script setup>
-import { ref } from "vue";
-
-const text = ref("Open");
-const changeText = () => {
-  text.value += "!";
-};
-</script>
+<script setup></script>
 
 <template>
   <button @click="changeText" class="button accent">
-    <!-- <slot></slot> -->
-    {{ text }}
+    <slot></slot>
   </button>
 </template>
 
