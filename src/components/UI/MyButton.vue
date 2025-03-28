@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <button class="button accent"></button>
+  <button class="button accent">
+    <slot></slot>
+  </button>
 </template>
 
 <style lang="css" scoped>

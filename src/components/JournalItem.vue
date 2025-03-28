@@ -20,13 +20,13 @@ const formatedDate = new Intl.DateTimeFormat("ru-RU").format(data.date);
 </script>
 
 <template>
-  <div class="journal-item">
-    <h2 class="journal-item__header">{{ data.title }}</h2>
-    <h2 class="journal-item__body">
-      <div class="journal-item__date">{{ formatedDate }}</div>
-      <div class="journal-item__text">{{ data.text }}</div>
-    </h2>
-  </div>
+  <!-- <div class="journal-item"> -->
+  <h2 class="journal-item__header">{{ data.title }}</h2>
+  <h2 class="journal-item__body">
+    <div class="journal-item__date">{{ formatedDate }}</div>
+    <div class="journal-item__text">{{ data.text }}</div>
+  </h2>
+  <!-- </div> -->
 </template>
 
 <style lang="css" scoped>
